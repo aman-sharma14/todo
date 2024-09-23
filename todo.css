@@ -1,0 +1,136 @@
+/* Color combination inspired by a similar to-do list seen on Google */
+
+h1{
+    text-align: center;
+    margin-top: 5%;
+    font-size: 75px;
+    color: #ffb7ae;
+    
+}
+
+  
+
+body{
+    background-image: linear-gradient(100deg, #575656, #062e3f);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 100vh;
+    
+}
+
+
+
+#field{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    
+}
+
+#ip{
+    height: 41.95px;
+    width: 35%;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border: 2px solid black;
+    border-right: none;
+    background-color: #0c0e0e;
+    color: #FDD9D0;
+    font-size: 18px;
+
+    &:hover{
+        background-color: #000000;
+    }
+    
+
+   
+    
+}
+
+
+input::placeholder{
+    font-size: 18px;
+    color: #ffecea;
+    opacity: 0.5;
+    
+}
+
+#add{
+    height: 45.95px;
+    border: 2px solid black;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: #FFDFDB;
+    font-size: 18px;
+    font-weight: bold;
+    transition: all 0.2s ease;
+
+    &:hover{
+        border-color: #ffe3dc; 
+        box-shadow: 0 0 10px #ffe3dc;
+        background-color: #ffe3dc;
+    }
+}
+
+#list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.list-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+            max-width: 500px;
+    border: 2px solid black;
+    border-radius: 15px;
+    width: 35%;
+    padding: 2.5px 0;
+    margin-top: 1%;
+    background-color: #0c0e0e;
+    
+}
+
+.list-item p {
+    margin: 0;
+    font-size: 22px; 
+    margin-left: 4%;
+    text-decoration-line: none;
+    color: #FDD9D0;
+}
+
+.buttons {
+    display: flex;
+    gap: 10px; 
+    margin-right: 2%;
+}
+
+.buttons button {
+    width: 35px; 
+    height: 35px; 
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    color: #181A1A;
+    background-color: #FDD9D0; 
+    cursor: pointer;
+    transition: all 0.2s ease;
+    i {
+        font-size: 20px; 
+    }
+
+    &:hover{
+        border-color: #ffe3dc; 
+        box-shadow: 0 0 10px #ffe3dc;
+        background-color: #ffe3dc;
+    }
+}
+
